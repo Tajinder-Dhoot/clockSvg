@@ -2,12 +2,27 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: middle;
+    align-items: center;
     background-color: black;
 }
 
-.clockbox, #clock {
+.clockbox {
+    width: 70%;
+}
+
+#clock {
     width: 100%;
+}
+
+.main-text {
+    text-align: center;
+    padding: 20px 50px 20px 20px;
+    margin-right: 50px;
+    color: wheat;
+}
+
+.main-text span {
+    font-style: oblique;
 }
 
 /*svg {
