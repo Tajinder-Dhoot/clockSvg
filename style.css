@@ -1,31 +1,66 @@
 .main {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: middle;
+    background-color: black;
 }
 
 .clockbox, #clock {
     width: 100%;
 }
 
+/*svg {
+    transform: translate(100px, 100px);
+}*/
+
 .circle {
     fill: none;
-    stroke: #000;
+    stroke: #79d9fc;
     stroke-width: 9;
     stroke-miterlimit: 10;
 }
 
-.mid-circle {
-    fill: #000;
-}
-
 .hour-marks {
     transform: translate(300px, 300px);
-    stroke: #000;
+    stroke: #f7ea5c;
     stroke-width: 3;
     stroke-miterlimit: 10;
     stroke-linecap: round;
+}
+
+.hands {
+    transform: translate(300px, 300px) rotate(-90deg) ;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+}
+
+.hours {
+    stroke-width: 15;
+    stroke: #f7ea5c;
+}
+
+.minutes {
+    stroke-width: 10;
+    stroke: #f7ea5c;
+    /*stroke: #a1faff;*/
+}
+
+.seconds {
+    stroke-width: 4;
+    stroke: #ff4f64;
+}
+
+.sig-text {
+    transform: translate(-170px, -25px) rotate(90deg);
+    font-family: sans-serif;
+    font-style: italic;
+    fill: #79d9fc;
+    stroke: none;
+}
+
+.mid-circle {
+    fill: #ff4f64;
 }
 
 .hour-marks > line:nth-child(1) {

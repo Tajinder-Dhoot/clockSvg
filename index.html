@@ -9,7 +9,9 @@
 	<main class="main">
 		<div class="clockbox">
 			<svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewbox="0 0 600 600">
-				<circle class="circle" cx="300" cy="300" r="253.9"/>
+				<g>
+					<circle class="circle" cx="300" cy="300" r="253.9"/>
+				</g>
 				<g class="hour-marks">
 					<line x1="15" y1="0" x2="30" y2="0" />
     				<line x1="15" y1="0" x2="30" y2="0" />
@@ -22,9 +24,17 @@
 					<line x1="15" y1="0" x2="30" y2="0" />
     				<line x1="15" y1="0" x2="30" y2="0" />
     				<line x1="15" y1="0" x2="30" y2="0" />
-    				<line x1="15" y1="0" x2="30" y2="0" />
+					<line x1="15" y1="0" x2="30" y2="0" />
 				</g>
-				<circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+				<g class="hands">
+					<text class="sig-text">Dhoots</text>
+					<line x1="0" y1="0" x2="150" y2="0" class="hours"/>
+					<line x1="0" y1="0" x2="230" y2="0" class="minutes"/>
+					<line x1="0" y1="0" x2="240" y2="0" class="seconds"/>
+				</g>
+				<g>
+					<circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+				</g>
 			</svg>
 		</div>
 	</main>
